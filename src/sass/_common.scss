@@ -45,6 +45,11 @@ p {
 	@include line-height(2.7);
 }
 
+input{
+	font-family: 'OpenSans-Light', $font-stack-helvetica;
+	@include font-size(1.4);
+}
+
 .btn{
 	border: none;
 	background-color: #328925;
@@ -61,6 +66,13 @@ p {
 	&.to_prod{
 		@include font-size(1.4);
 		width: 200px;
+	}
+	&.not_available{
+		text-align: left;
+		background-color: transparent;
+		color: #328925;
+		font-family: 'OpenSans-Bold', $font-stack-helvetica;
+		@include font-size(1.4);
 	}
 }
 
@@ -212,8 +224,25 @@ footer{
 	float: right;
 //	width: 400px;
 	width: 387px;
-	padding: 10px 40px 10px 27px;
+	padding: 10px 38px 10px 27px;
 }
+
+.search{
+	[type="search"]{
+		border: 1px solid #427954;
+		height: 30px;
+		line-height: 30px;
+		padding: 0 10px;
+		width: 235px;
+	}
+	.btn_search{
+		width: 80px;
+		height: 30px;
+		line-height: 30px;
+		@include font-size(1.4);
+		float: right;
+	}
+} 
 
 .sidebar__item__head{
 	@include font-size(3.0);
@@ -361,6 +390,7 @@ section {
 	width: 33.333%;
 	display: inline-block;
 	@include line-height(0);
+	position: relative;
 	.item_img__img{
 		background-color: #fff;
 		width: 100%;
@@ -391,6 +421,21 @@ section {
 	.btn{
 		margin-top: 8px;
 	}
+}
+
+.sticker_novelty{
+	position: absolute;
+	top: 21px;
+	right: 3px;
+	background-color: #97bf0d;
+	color: #fff;
+	display: inline-block;
+	width: 80px;
+	text-align: center;
+	height: 23px;
+	line-height: 23px;
+	font-family: 'OpenSans-Bold', $font-stack-helvetica;
+	@include font-size(1.2);
 }
 
 .information_block{
@@ -479,4 +524,8 @@ section {
 	.p_top12{
 		padding-top: 12px;
 	}
+}
+
+.category_product{
+	margin-bottom: 65px;
 }
