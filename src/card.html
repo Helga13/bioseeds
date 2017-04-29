@@ -1,20 +1,53 @@
 <!doctype html>
 <html>
-	<title>Главная</title>
+	<title>Карточка товара</title>
 //= includes/head.html
 <body>
 	//= includes/header.html
 	<div class="content_header">
-		<img class="content_img" src="img/headers/header_home.jpg" alt="">
-		<div class="content_title">Семена из Голандии</div>
+		<img class="content_img" src="img/headers/header_category.jpg" alt="">
+		<div class="content_title">Томаты</div>
 	</div>
 	<div class="cat_prod_wrap">
 		//= includes/sidebar.html
 	</div>
 	<div class="main_content">
+		<section class="section_wrap">
+			<div class="tabs">
+				<ul class="tabs__caption">
+					<li class="active">Описание</li>
+					<li>Основные свойства</li>
+				</ul>
+				<div class="tabs__content">
+					<p class="info_text">Раннеспелый томат для плёночных теплиц с обогревом и без, для первого и второго оборота.</p>
+					<p class="info_text">160-180 г, на первых кистях 200-220 г</p>
+					<p class="info_text">плоды окр углые, очень хорошего качества – тёмно-красные, очень плотные, лёжкие, транспортабельные</p>
+					<p class="info_text">растение открытое, с умеренной силой роста</p>
+					<p class="info_text">междо узлия средней длины</p>
+					<p class="info_text">Очень ранний, по срокам вступления в плодоношение сравним с </p>
+				</div>
+				<div class="tabs__content active">
+					<div class="section_subtitle">Гибрид</div>
+					<p class="info_text">Очень ранний, по срокам вступления в плодоношение сравним с полудетерминантными гибридами!</p>
+					<p class="info_text">Для выращивания в плёночных теплицах с обогревом и без, в первом и втором оборотах</p>
+					<div class="section_subtitle">Плоды</div>
+					<p class="info_text">160-180 г, при этом на первых кистях в первом обороте масса плодов достигает 200-220 г</p>
+					<p class="info_text">Плоды округлой формы, очень хорошего качества: тёмно-красные, очень плотные, лёжкие, транспортабельные</p>
+					<p class="info_text">Устойчивые к растрескиванию</p>
+					<div class="section_subtitle">Растения</div>
+					<p class="info_text">Открытые, с умеренной силой роста</p>
+					<p class="info_text">Междоузлия средней длины</p>
+					<p class="info_text">Высокая завязываемость</p>
+					<p class="info_text">Сильная корневая система</p>
+					<div class="section_subtitle">Устойчивости</div>
+					<p class="info_text">Высокий уровень : ToMV:0-2 (вирус томатной мозаики), TSWV (вирус пятнистого увядания томата), Ff:A-E (кладоспориоз), Fol:0,1 (фузариозное увядание), Va:0/Vd:0 вертициллезное увядание)</p>
+					<p class="info_text">Средний уровень: Ma/Mi/Mj (нематоды)</p>
+				</div>
+			</div>
+		</section>
 		<section class="section_wrap season_product">
-			<div class="section_title">Сезонные товары</div>
-			<div class="section_subtitle">Хиты продаж</div>
+			<div class="section_title">Похожие товары</div>
+			<div class="section_subtitle">Выбор покупателей</div>
 			<div class="row">
 				<div class="item_prod">
 					<div class="item_prod__wrap">
@@ -55,55 +88,6 @@
 						</div>
 					</div>
 				</div>
-				<div class="item_prod">
-					<div class="item_prod__wrap">
-						<div class="item_img">
-							<img class="item_img__img" src="img/products/prod1.jpg" alt="">
-						</div>
-						<div class="item_text">
-							<div class="item_name">Шерами</div>
-							<div class="item_num">50 шт.</div>
-							<div class="item_price">100 р.</div>
-							<a href="#" class="btn">Добавить в корзину</a>
-						</div>
-					</div>
-				</div>
-				<div class="item_prod">
-					<div class="item_prod__wrap">
-						<div class="item_img">
-							<img class="item_img__img" src="img/products/prod1.jpg" alt="">
-						</div>
-						<div class="item_text">
-							<div class="item_name">Шерами</div>
-							<div class="item_num">50 шт.</div>
-							<div class="item_price">100 р.</div>
-							<a href="#" class="btn">Добавить в корзину</a>
-						</div>
-					</div>
-				</div>
-				<div class="item_prod">
-					<div class="item_prod__wrap">
-						<div class="item_img">
-							<img class="item_img__img" src="img/products/prod1.jpg" alt="">
-						</div>
-						<div class="item_text">
-							<div class="item_name">Шерами</div>
-							<div class="item_num">50 шт.</div>
-							<div class="item_price">100 р.</div>
-							<a href="#" class="btn">Добавить в корзину</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="information_block">
-			<div class="info info_bg_first section_wrap">
-				<div class="section_title">О Rijk Zwaan</div>
-				<div class="section_subtitle">Взаимовыгодные ситуации</div>
-				<p class="info_text">Мы рассматриваем наших клиентов как партнеров и стремимся создать взаимовыгодные условия для долгосрочного сотрудничества.</p>
-			</div>
-			<div class="info_img">
-				<img src="img/bg1.jpg" alt="">
 			</div>
 		</section>
 		<section class="section_wrap protection_product">
@@ -149,56 +133,6 @@
 						</div>
 					</div>
 				</div>
-				<div class="item_prod">
-					<div class="item_prod__wrap">
-						<div class="item_img">
-							<img class="item_img__img" src="img/products_protection/csm_Natupol.png" alt="">
-						</div>
-						<div class="item_text">
-							<div class="item_name">Trianum</div>
-							<div class="item_num">50 шт.</div>
-							<div class="item_price">100 р.</div>
-							<a href="#" class="btn">Добавить в корзину</a>
-						</div>
-					</div>
-				</div>
-				<div class="item_prod">
-					<div class="item_prod__wrap">
-						<div class="item_img">
-							<img class="item_img__img" src="img/products_protection/csm_Natupol.png" alt="">
-						</div>
-						<div class="item_text">
-							<div class="item_name">Trianum</div>
-							<div class="item_num">50 шт.</div>
-							<div class="item_price">100 р.</div>
-							<a href="#" class="btn">Добавить в корзину</a>
-						</div>
-					</div>
-				</div>
-				<div class="item_prod">
-					<div class="item_prod__wrap">
-						<div class="item_img">
-							<img class="item_img__img" src="img/products_protection/csm_Natupol.png" alt="">
-						</div>
-						<div class="item_text">
-							<div class="item_name">Trianum</div>
-							<div class="item_num">50 шт.</div>
-							<div class="item_price">100 р.</div>
-							<a href="#" class="btn">Добавить в корзину</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="information_block information_block_koppert">
-			<div class="info koppert section_wrap">
-				<div class="section_title">О Koppert</div>
-				<div class="section_subtitle">Byological Systems</div>
-				<p class="info_text">Мы обеспечиваем комплексную систему профессиональных знаний и безопасных природных решений, которые повышают уровень экологичности, устойчивости и урожайности сельскохозяйственных культур.</p>
-				<a href="#" class="btn to_prod">Перейти к товарам</a>
-			</div>
-			<div class="info_img info_img__koorpet">
-				<img src="img/koppert.jpg" alt="">
 			</div>
 		</section>
 		<section class="section_wrap articles">
