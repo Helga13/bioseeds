@@ -38,6 +38,7 @@ $(document).ready(function () {
 		e.preventDefault();
 	});
 	
+	
 	// quantity
 
 	(function(){
@@ -64,9 +65,22 @@ $(document).ready(function () {
 		$(this).addClass('active').siblings().removeClass('active').closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
 	});
 	
+	// слайдер с миниатюрами
+
+  $('.show_image').click(function (e) {
+    e.preventDefault();
+    var mainImage = $(this).index();
+      $('.show_image').removeClass('show_image__active');
+      $(this).addClass('active');
+      $('.img_main li').removeClass('active');
+      $('.img_main li').eq(mainImage).addClass('active');
+  });
+	
 	
 });
 
+
+// sticky 
 
 (function(){
 var a = document.querySelector('#js-fixblock'), b = null, P = 0;  // если ноль заменить на число, то блок будет прилипать до того, как верхний край окна браузера дойдёт до верхнего края элемента. Может быть отрицательным числом
