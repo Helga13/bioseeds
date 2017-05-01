@@ -221,6 +221,7 @@ footer{
 .sticky {
   position: fixed;
   z-index: 101;
+	overflow-y: auto;
 }
 .stop {
   position: relative;
@@ -229,7 +230,6 @@ footer{
 
 .sidebar{
 	float: right;
-//	width: 400px;
 	width: 387px;
 	padding: 10px 38px 10px 27px;
 }

@@ -13,6 +13,8 @@ $(document).ready(function () {
 	
 	'use strict';
 	
+	// sidebar accordeon 
+	
 	$('.sidebar__item__head').on('click', function(){
 		
 		var this_ = $(this),

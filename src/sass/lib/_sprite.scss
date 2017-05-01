@@ -11,65 +11,43 @@
   $spritesheet: width height image $spritesheet-sprites
   */
 $icons_cart-name: 'icons_cart'
-$icons_cart-x: 250px
+$icons_cart-x: 0px
 $icons_cart-y: 0px
-$icons_cart-offset-x: -250px
+$icons_cart-offset-x: 0px
 $icons_cart-offset-y: 0px
 $icons_cart-width: 166px
 $icons_cart-height: 170px
-$icons_cart-total-width: 551px
-$icons_cart-total-height: 350px
+$icons_cart-total-width: 266px
+$icons_cart-total-height: 343px
 $icons_cart-image: 'sprite.png'
-$icons_cart: 250px 0px -250px 0px 166px 170px 551px 350px 'sprite.png' 'icons_cart'
+$icons_cart: 0px 0px 0px 0px 166px 170px 266px 343px 'sprite.png' 'icons_cart'
 $icons_person-name: 'icons_person'
-$icons_person-x: 416px
-$icons_person-y: 0px
-$icons_person-offset-x: -416px
-$icons_person-offset-y: 0px
+$icons_person-x: 0px
+$icons_person-y: 170px
+$icons_person-offset-x: 0px
+$icons_person-offset-y: -170px
 $icons_person-width: 135px
 $icons_person-height: 173px
-$icons_person-total-width: 551px
-$icons_person-total-height: 350px
+$icons_person-total-width: 266px
+$icons_person-total-height: 343px
 $icons_person-image: 'sprite.png'
-$icons_person: 416px 0px -416px 0px 135px 173px 551px 350px 'sprite.png' 'icons_person'
-$icons_search-name: 'icons_search'
-$icons_search-x: 0px
-$icons_search-y: 0px
-$icons_search-offset-x: 0px
-$icons_search-offset-y: 0px
-$icons_search-width: 250px
-$icons_search-height: 250px
-$icons_search-total-width: 551px
-$icons_search-total-height: 350px
-$icons_search-image: 'sprite.png'
-$icons_search: 0px 0px 0px 0px 250px 250px 551px 350px 'sprite.png' 'icons_search'
+$icons_person: 0px 170px 0px -170px 135px 173px 266px 343px 'sprite.png' 'icons_person'
 $phone-name: 'phone'
-$phone-x: 0px
-$phone-y: 250px
-$phone-offset-x: 0px
-$phone-offset-y: -250px
+$phone-x: 166px
+$phone-y: 0px
+$phone-offset-x: -166px
+$phone-offset-y: 0px
 $phone-width: 100px
 $phone-height: 100px
-$phone-total-width: 551px
-$phone-total-height: 350px
+$phone-total-width: 266px
+$phone-total-height: 343px
 $phone-image: 'sprite.png'
-$phone: 0px 250px 0px -250px 100px 100px 551px 350px 'sprite.png' 'phone'
-$phone2-name: 'phone2'
-$phone2-x: 100px
-$phone2-y: 250px
-$phone2-offset-x: -100px
-$phone2-offset-y: -250px
-$phone2-width: 100px
-$phone2-height: 100px
-$phone2-total-width: 551px
-$phone2-total-height: 350px
-$phone2-image: 'sprite.png'
-$phone2: 100px 250px -100px -250px 100px 100px 551px 350px 'sprite.png' 'phone2'
-$spritesheet-width: 551px
-$spritesheet-height: 350px
+$phone: 166px 0px -166px 0px 100px 100px 266px 343px 'sprite.png' 'phone'
+$spritesheet-width: 266px
+$spritesheet-height: 343px
 $spritesheet-image: 'sprite.png'
-$spritesheet-sprites: $icons_cart $icons_person $icons_search $phone $phone2
-$spritesheet: 551px 350px 'sprite.png' $spritesheet-sprites
+$spritesheet-sprites: $icons_cart $icons_person $phone
+$spritesheet: 266px 343px 'sprite.png' $spritesheet-sprites
 
 /*
   The provided mixins are intended to be used with the array-like variables
