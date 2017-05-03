@@ -12,10 +12,18 @@
 		//= includes/sidebar.html
 	</div>
 	<div class="main_content">
+	<section>
+			<ul class="breadcrumbs">
+				<li class="crumb first_crumb"><a href="#">Главная</a></li>
+				<li class="crumb"><a href="#">Каталог товаров</a></li>
+				<li class="crumb"><a href="#">Томаты</a></li>
+				<li class="crumb"><a href="#">Кистевой томат</a></li>
+				<li class="crumb last_crumb">Эндэвер</li>
+			</ul>
+		</section>
 		<section class="section_wrap card_title_block">
 			<a href="#" class="back_btn">&larr;</a>
 			<div class="section_title">Эндевер</div>
-			<div class="section_subtitle">Кистевой томат</div>
 		</section>
 		<section>
 			<div class="photo_frame">
@@ -44,7 +52,7 @@
     	</div>
     	<div class="desc_frame">
     		<div class="data_block">
-    			<div class="price">14.76 руб</div>
+    			<div class="price"><span class="key">Стоимость: </span>14.76 руб</div>
     			<div class="quantity">
 						<input type="text" name="" value="1" class="input">
 						<button class="up" data-direction="up"></button>
@@ -92,7 +100,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="section_wrap season_product">
+		<section class="section_wrap season_product slider">
 			<div class="section_title">Похожие товары</div>
 			<div class="section_subtitle">Выбор покупателей</div>
 			<div class="row">
@@ -103,8 +111,8 @@
 						</div>
 						<div class="item_text">
 							<div class="item_name">Шерами</div>
-							<div class="item_num">50 шт.</div>
-							<div class="item_price">100 р.</div>
+							<div class="item_num"><span class="key">Фасовка: </span>50 шт.</div>
+							<div class="item_price"><span class="key">Стоимость: </span>100.00&nbsp;BYR</div>
 							<a href="#" class="btn">Добавить в корзину</a>
 						</div>
 					</div>
@@ -116,8 +124,8 @@
 						</div>
 						<div class="item_text">
 							<div class="item_name">Шерами</div>
-							<div class="item_num">50 шт.</div>
-							<div class="item_price">100 р.</div>
+							<div class="item_num"><span class="key">Фасовка: </span>50 шт.</div>
+							<div class="item_price"><span class="key">Стоимость: </span>100.00&nbsp;BYR</div>
 							<a href="#" class="btn">Добавить в корзину</a>
 						</div>
 					</div>
@@ -129,15 +137,15 @@
 						</div>
 						<div class="item_text">
 							<div class="item_name">Шерами</div>
-							<div class="item_num">50 шт.</div>
-							<div class="item_price">100 р.</div>
+							<div class="item_num"><span class="key">Фасовка: </span>50 шт.</div>
+							<div class="item_price"><span class="key">Стоимость: </span>100.00&nbsp;BYR</div>
 							<a href="#" class="btn">Добавить в корзину</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="section_wrap protection_product">
+		<section class="section_wrap protection_product slider">
 			<div class="section_title">Защита растений от вредителей</div>
 			<div class="section_subtitle">Хиты продаж</div>
 			<div class="row">
@@ -148,8 +156,8 @@
 						</div>
 						<div class="item_text">
 							<div class="item_name">Trianum</div>
-							<div class="item_num">50 шт.</div>
-							<div class="item_price">100 р.</div>
+							<div class="item_num"><span class="key">Фасовка: </span>50 шт.</div>
+							<div class="item_price"><span class="key">Стоимость: </span>100.00&nbsp;BYR</div>
 							<a href="#" class="btn">Добавить в корзину</a>
 						</div>
 					</div>
@@ -161,8 +169,8 @@
 						</div>
 						<div class="item_text">
 							<div class="item_name">Trianum</div>
-							<div class="item_num">50 шт.</div>
-							<div class="item_price">100 р.</div>
+							<div class="item_num"><span class="key">Фасовка: </span>50 шт.</div>
+							<div class="item_price"><span class="key">Стоимость: </span>100.00&nbsp;BYR</div>
 							<a href="#" class="btn">Добавить в корзину</a>
 						</div>
 					</div>
@@ -174,25 +182,12 @@
 						</div>
 						<div class="item_text">
 							<div class="item_name">Trianum</div>
-							<div class="item_num">50 шт.</div>
-							<div class="item_price">100 р.</div>
+							<div class="item_num"><span class="key">Фасовка: </span>50 шт.</div>
+							<div class="item_price"><span class="key">Стоимость: </span>100.00&nbsp;BYR</div>
 							<a href="#" class="btn">Добавить в корзину</a>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<section class="section_wrap articles">
-			<div class="item_articles">
-				<div class="section_title">Познавательные статьи</div>
-				<div class="section_subtitle">В 2017 году мы предлагаем профессионалам тепличникам, фермерам, дачникам и огородникам любителям, семена овощных культур производства голландской фирмы Райк Цваан (Rijk Zwaan)</div>
-				<p class="info_text">Пятнадцать лет компания Турнепс Агро успешно занимается распространением и продажей семян Райк Цваан на территории Беларуси, а также внедрением голландских технологий выращивания овощей и салатов.</p>
-				<p class="info_text">Как известно, голландцы – лидеры на мировом сельскохозяйственном рынке , и каждый год подтверждением тому служат семена Райк Цваан, которые мы реализуем для Беларуси.</p>
-				<p class="info_text">Уже более восьмидесяти лет компания Райк Цваан предлагает на мировой рынок семенной материал самого высокого качества, который разрабатывается и испытывается в новейших научно- исследовательских центрах в Нидерландах и других странах.</p>
-				<p class="info_text">Мы не просто продаём семена, мы оказываем консультативно-технологическую поддержку во всех вопросах, возникающих в процессе производства, а также в вопросах защиты растений, обучаем специалистов овощеводов тонкостям работы с семенами Rijk Zwaan, и ежегодные приросты урожайности наших клиентов – лучшая благодарность.</p><p class="info_text">Все сорта и гибриды представленные в нашем каталоге семян — уже прошли регистрацию на территории Республики Беларусь, испытаны в различных областях нашей страны в тепличных и фермерских хозяйствах.</p>
-				<div class="section_subtitle p_top12">Где же и как купить семена голландской селекции от Райк Цваан?</div>
-				<p class="info_text">Это можно сделать в нашем интернет магазине. Заказать семена можно заполнив и отправив форму заказа у нас на сайте, предварительно положив в корзину необходимые Вам позиции. Также можно позвонить по телефону 8 (029) 222-01-10 , получить консультацию специалиста и оформить заказ, можно оправить свою заявку на нашу почту info@bioseeds.by или по факсу 8 (017) 203-57-97. Мы можем отправить Вам семена почтой (наложенным платежом), с курьером по г.Минску или, если это большой объём, то и по Беларуси. Форма оплаты – любая, удобная для Вас.</p>
-				<p class="info_text">Приобретая семена Райк Цваан – Вы получаете уверенность в будущем урожае, а уверенность — это самый важный аспект успешной деятельности.</p>
 			</div>
 		</section>
 	</div>

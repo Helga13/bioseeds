@@ -11,6 +11,7 @@
 
 </head>
 <body>
+	<div class="overlay"></div>
 	<header>
 		<div class="top_menu">
 			<div class="header_wrap">
@@ -35,9 +36,16 @@
 					<ul class="add_menu">
 						<li><a href="#" class="point">Поиск семян</a></li>
 						<li><a href="#" class="point">Защита растений</a></li>
-						<li><a href="#" class="point"><span class="icon icon_card"><img src="img/icons/icons_cart.png" alt=""></span>Корзина</a></li>
-						<li><a href="#" class="point"><span class="icon icon_person"><img src="img/icons/icons_person.png" alt=""></span>Личный кабинет</a></li>
+						<li class="icon"><a href="#" class="point"><span class="icon icon_card"><img src="img/icons/icons_cart.png" alt=""></span>Корзина<span class="icon_quantity">2</span></a></li>
+						<li class="icon"><a href="#" class="point"><span class="icon icon_person"><img src="img/icons/icons_person.png" alt=""></span>Личный кабинет</a></li>
 					</ul>
+				</div>
+				<div class="hamburger">
+					<a href="#">
+						<span class="icon_btn"></span>
+						<span class="icon_btn"></span>
+						<span class="icon_btn"></span>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -47,12 +55,20 @@
 		<div class="content_title">Результаты поиска</div>
 	</div>
 	<div id="js-fixblock" class="sidebar">
+		<div class="close">
+			<a href="#">
+				<span class="icon_close first"></span>
+				<span class="icon_close last"></span>
+			</a>
+		</div>
+	<!--
 		<div class="search_block">
 			<form class="search">
 				<input type="search" name="q" placeholder=""> 
 				<input type="submit" value="Найти" class="btn btn_search">
 			</form>
 		</div>
+	-->
 		<div class="sidebar__item is-active">
 			<div class="sidebar__item__head">Каталог товаров</div>
 			<ul class="sidebar_list">
@@ -161,9 +177,15 @@
 				<li><a href="#"><span class="solid">Побочные эффекты</span></a></li>
 			</ul>
 		</div>
+		<div class="search_block">
+			<form class="search">
+				<input type="search" name="q" placeholder=""> 
+				<input type="submit" value="Найти" class="btn btn_search">
+			</form>
+		</div>
 	</div>
 	<div class="main_content">
-		<section class="section_wrap">
+		<section class="section_wrap main_search">
 			<div class="main_search_block">
 			<div class="section_subtitle">Результаты поиска по запросу “жуки”</div>
 				<form class="search">
@@ -173,7 +195,7 @@
 			</div>
 		</section>
 		<section class="section_wrap protection_product">
-			<div class="section_title">Товары по вашему запросу</div>
+			<div class="section_title">Товары по вашему запросу:</div>
 			<div class="row">
 				<div class="item_prod">
 					<div class="item_prod__wrap">
@@ -182,8 +204,8 @@
 						</div>
 						<div class="item_text">
 							<div class="item_name">Trianum</div>
-							<div class="item_num">50 шт.</div>
-							<div class="item_price">100 р.</div>
+							<div class="item_num"><span class="key">Фасовка: </span>50 шт.</div>
+							<div class="item_price"><span class="key">Стоимость: </span>100.00&nbsp;BYR</div>
 							<a href="#" class="btn">Добавить в корзину</a>
 						</div>
 					</div>
@@ -195,8 +217,8 @@
 						</div>
 						<div class="item_text">
 							<div class="item_name">Trianum</div>
-							<div class="item_num">50 шт.</div>
-							<div class="item_price">100 р.</div>
+							<div class="item_num"><span class="key">Фасовка: </span>50 шт.</div>
+							<div class="item_price"><span class="key">Стоимость: </span>100.00&nbsp;BYR</div>
 							<a href="#" class="btn">Добавить в корзину</a>
 						</div>
 					</div>
@@ -208,8 +230,8 @@
 						</div>
 						<div class="item_text">
 							<div class="item_name">Trianum</div>
-							<div class="item_num">50 шт.</div>
-							<div class="item_price">100 р.</div>
+							<div class="item_num"><span class="key">Фасовка: </span>50 шт.</div>
+							<div class="item_price"><span class="key">Стоимость: </span>100.00&nbsp;BYR</div>
 							<a href="#" class="btn">Добавить в корзину</a>
 						</div>
 					</div>

@@ -11,6 +11,7 @@
 
 </head>
 <body>
+	<div class="overlay"></div>
 	<header>
 		<div class="top_menu">
 			<div class="header_wrap">
@@ -35,9 +36,16 @@
 					<ul class="add_menu">
 						<li><a href="#" class="point">Поиск семян</a></li>
 						<li><a href="#" class="point">Защита растений</a></li>
-						<li><a href="#" class="point"><span class="icon icon_card"><img src="img/icons/icons_cart.png" alt=""></span>Корзина</a></li>
-						<li><a href="#" class="point"><span class="icon icon_person"><img src="img/icons/icons_person.png" alt=""></span>Личный кабинет</a></li>
+						<li class="icon"><a href="#" class="point"><span class="icon icon_card"><img src="img/icons/icons_cart.png" alt=""></span>Корзина<span class="icon_quantity">2</span></a></li>
+						<li class="icon"><a href="#" class="point"><span class="icon icon_person"><img src="img/icons/icons_person.png" alt=""></span>Личный кабинет</a></li>
 					</ul>
+				</div>
+				<div class="hamburger">
+					<a href="#">
+						<span class="icon_btn"></span>
+						<span class="icon_btn"></span>
+						<span class="icon_btn"></span>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -47,12 +55,20 @@
 		<div class="content_title">Вредители</div>
 	</div>
 	<div id="js-fixblock" class="sidebar">
+		<div class="close">
+			<a href="#">
+				<span class="icon_close first"></span>
+				<span class="icon_close last"></span>
+			</a>
+		</div>
+	<!--
 		<div class="search_block">
 			<form class="search">
 				<input type="search" name="q" placeholder=""> 
 				<input type="submit" value="Найти" class="btn btn_search">
 			</form>
 		</div>
+	-->
 		<div class="sidebar__item is-active">
 			<div class="sidebar__item__head">Каталог товаров</div>
 			<ul class="sidebar_list">
@@ -160,6 +176,12 @@
 				</li>
 				<li><a href="#"><span class="solid">Побочные эффекты</span></a></li>
 			</ul>
+		</div>
+		<div class="search_block">
+			<form class="search">
+				<input type="search" name="q" placeholder=""> 
+				<input type="submit" value="Найти" class="btn btn_search">
+			</form>
 		</div>
 	</div>
 	<div class="main_content">
