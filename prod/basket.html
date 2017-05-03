@@ -254,7 +254,7 @@
 						<div class="total">Итого</div>
 						<div class="total_price">324 BYN</div>
 					</div>
-					<button type="submit" class="btn btn_issue ">Оформить покупку</button>
+					<button type="submit" class="btn btn_issue" data-id="ordering">Оформить покупку</button>
 			</div>
 		</section>
 	</div>
@@ -269,6 +269,37 @@
 	</ul>
 	<div class="footer_logo"></div>
 </footer>
+<div class="overlay popup" id="ordering">
+	<section class="popup_content">
+	<a href="#" class="popup_close"><img src="img/buttons/icon_close.png" alt=""></a>
+		<form action="">
+			<div class="text_block">
+				<div class="section_title">Оформление заказа</div>
+				<div class="section_subtitle">Введите данные, неоходимые для отправки по почте.</div>
+			</div>
+			<div class="field">
+				<label for="sample_name" class="simple_text">Ф.И.О.</label>
+				<input name="NAME" id="sample_name" type="text"> 
+			</div><div class="field">
+				<label for="sample_address" class="simple_text">Адрес доставки</label>
+				<input name="NAME" id="sample_address" type="text"> 
+			</div>
+			<div class="field">
+				<label for="sample_index" class="simple_text">Индекс</label>
+				<input name="NAME" id="sample_index" type="text"> 
+			</div>
+			<div class="field">
+				<label for="sample_phone" class="simple_text">Контактный телефон</label>
+				<input name="PHONE" id="sample_phone" type="text" placeholder="+375 (__) ___ __ __">
+			</div>
+			<div class="field">
+				<label for="sample_email" class="simple_text">Электронный адрес</label>
+				<input name="NAME" id="sample_email" type="text"> 
+			</div>
+			<button value="Оформить заказ" type="submit" class="btn">Оформить заказ</button>
+		</form>
+	</section>
+</div>
 <script src="js/common.js"></script>
 </body>
 </html>

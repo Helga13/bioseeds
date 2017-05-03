@@ -47,7 +47,18 @@ p {
 input{
 	font-family: 'OpenSans-Light', $font-stack-helvetica;
 	@include font-size(1.4);
+	border: 1px solid #005c24;
+	padding: 0 20px 0 10px;
+  color: #000;
 }
+label{
+		font-family: 'OpenSans-Bold', $font-stack-helvetica;
+		@include font-size(1.8);
+		@include line-height(3.2);
+		color: #005c24;
+		display: inline-block;
+}
+
 
 .btn{
 	border: none;
@@ -82,8 +93,68 @@ input{
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background-color: rgba(73,73,73, .5);
+		background-color: rgba(121,167,139, .8);
 		z-index: 1;
+	}
+}
+
+/* --- popup --- */
+
+.popup {
+    display: none;
+}
+
+.overlay.popup {
+  position: fixed;
+	display: none;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(121,167,139,.8);
+  overflow-y: auto;
+  z-index: 101;
+	text-align: center;
+}
+
+.popup_content {
+  top: 50px;
+  position: relative;
+  overflow-y: auto;
+  margin: 50px 0;
+  min-width: 320px;
+  max-width: 715px;
+	width: 100%;
+  padding: 76px 54px 50px;
+	background-color: #fff;
+  display: inline-block;
+	text-align: left;
+	.section_title{
+		padding-bottom: 16px;
+	}
+	.section_subtitle{
+		color: #000;
+	}
+	.popup_close{
+		float: right;
+		line-height: 0;
+	}
+	.field{
+		line-height: 0;
+		margin: 20px 0;
+	}
+	label{
+		width: 40%;
+	}
+	input{
+    height: 32px;
+    line-height: 32px;
+		width: 60%;
+		padding: 0 10px;
+	}
+	.btn{
+		width: 134px;
+		float: right;
 	}
 }
 
@@ -364,6 +435,7 @@ footer{
 		line-height: 30px;
 		@include font-size(1.4);
 		float: right;
+		padding: 0 20px;
 	}
 } 
 
@@ -788,6 +860,7 @@ section {
 		float: none;
 		width: 70px;
 		margin-left: 10px;
+		padding: 0;
 	}
 }
 

@@ -108,6 +108,32 @@ $(document).ready(function () {
 		dots: true
 	});
 	
+	//popup
+	
+	$('.btn_issue').click(function (e) {
+        e.preventDefault();
+        var DataId = $(this).attr('data-id');
+        if (typeof DataId == "string") {
+        	$('#'+DataId).css('display', 'block');
+        	$('body').css('overflow', 'hidden');  
+        }
+    });
+    $('.popup').click(function (e) {
+        e = event || window.event
+        if (e.target == this) {
+            $(this).css('display', 'none');
+            $('body').css('overflow', 'auto'); 
+        }
+    });
+	$('.popup_close').click(function (e) {
+         e.preventDefault();
+           $(this).parents('.popup').css('display', 'none');
+           $('body').css('overflow', 'auto'); 
+    });
+    $('.popup .popup_content').click(function(e) {
+		e.stopPropagation();
+	}); 
+	
 	
 	
 });

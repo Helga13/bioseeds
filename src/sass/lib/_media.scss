@@ -149,7 +149,11 @@
 		width: 100%;
 		margin-bottom: 20px;
 	}
-	
+	.popup_content {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+
 }
 
 @media only screen and (max-width : 640px) {
@@ -200,6 +204,12 @@
 			width: 50%;
 			height: auto;
 			line-height: 30px;
+		}
+	}
+	.popup_content {
+		label,
+		input{
+			width: 100%;
 		}
 	}
 }
