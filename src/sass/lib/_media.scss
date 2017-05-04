@@ -303,6 +303,12 @@
 	.sidebar_list .value {
     padding-left: 1px;
 	}
+	.sidebar{
+		padding: 54px 22px 10px 22px;
+	}
+	.sidebar.visible .sticky{
+		width: 100%!important;
+	}
 }
 
 @media only screen and (max-width : 320px) {
